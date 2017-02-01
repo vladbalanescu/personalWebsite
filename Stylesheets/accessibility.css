@@ -1,0 +1,74 @@
+/*------------------COPYRIGHT------------------*
+* ALL RIGHTS RESERVED TO VLAD BALANESCU, 2017  *
+* Personal Website                             *
+* NOTICE:  All  information  contained  herein *
+*          is and remains  the   property   of *
+*          Vlad Balanescu.  The   intellectual *
+*          and technical  concepts   contained *
+*          herein  are proprietary   to   Vlad *
+*          Balanescu.   Dissemination  of this *
+*          information   or   reproduction  of *
+*          this material is strictly forbidden *
+*          unless prior written  permission is *
+*          obtained    from     Vlad Balanescu.*
+----------------------------------------------*/
+
+
+/*----------Main content----------------------------*/
+
+#wraper {
+    background-image: url("../Multimedia/Wraper.jpg");
+    background-size: 1100px 1020px;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    border-radius: 10px;
+    width: 52vw;
+    height: 46vw;
+    margin: 6vw auto;
+}
+
+#innerWraper {
+    margin: 1vw;
+    background-color: #F8F8F8;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#title1 {
+    color: #093f89;
+    font-size: 2vw;
+    font-family: "Arial", serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 3vw auto;
+}
+
+.title2 {
+    color: #093f89;
+    font-size: 2vw;
+    font-family: "Arial", serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 3vw auto;
+}
+
+.text {
+    font-family: "Calibri", "Arial", "Serif";
+    margin: 1vw 1.8vw 2vw 2.3vw;
+    text-align: justify;
+    font-size: 1vw;
+}
+
+#statement {
+    font-family: "Calibri", "Arial", "Serif";
+    margin: 1vw 1.8vw 2vw 2.3vw;
+    text-align: justify;
+    font-size: 1vw;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*----------Main content----------------------------*/

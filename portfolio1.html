@@ -1,0 +1,403 @@
+<!------------------COPYRIGHT------------------*
+* ALL RIGHTS RESERVED TO VLAD BALANESCU, 2017  *
+* Personal Website                             *
+* NOTICE:  All  information  contained  herein *
+*          is and remains  the   property   of *
+*          Vlad Balanescu.  The   intellectual *
+*          and technical  concepts   contained *
+*          herein  are proprietary   to   Vlad *
+*          Balanescu.   Dissemination  of this *
+*          information   or   reproduction  of *
+*          this material is strictly forbidden *
+*          unless prior written  permission is *
+*          obtained    from     Vlad Balanescu.*
+----------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Vlad Balanescu
+	</title>
+	<link rel="shortcut icon" href="Multimedia/Fav.png" />
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="Stylesheets/portfolio.css" />
+	<link rel="stylesheet" type="text/css" href="Stylesheets/header&footer.css">
+
+	<!--Scripts-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="Scripts/slideShow.js"></script>
+	<script src="Scripts/main.js"></script>
+</head>
+
+<body>
+	<div id="preloader">
+		<img src="Multimedia/preloader.gif">
+		<p id="preloaderText"> Hang on a second ...</p>
+	</div>
+
+	<!---Header-->
+	<div id="header">
+		<a href="index.html"><img id="logoImage" src="Multimedia/Logo.png" title="Back to homepage" alt="" /></a>
+		<div class="navcontainer">
+			<ul>
+				<li><a href="index.html" class="nocurrent" accesskey="1" title="Visit this page">Home</a></li>
+				<li><a href="cv.html" accesskey="2" class="nocurrent" title="Visit this page">CV</a></li>
+				<li><a class="current portfolioLink">Portfolio</a></li>
+				<li><a href="passions.html" accesskey="4" class="nocurrent" title="Visit this page">My Passions</a></li>
+				<li><a href="games.html" accesskey="5" class="nocurrent" title="Visit this page">Games</a></li>
+				<li><a href="contact.html" accesskey="6" class="nocurrent" title="Visit this page">Contact</a></li>
+			</ul>
+			<ul id="submenu">
+				<li><a id="current" accesskey="3" title="Already here"> 1<sup>st</sup>	&nbsp; year </a></li>
+				<li><a href="portfolio2.html" title="Visit this page"> 2<sup>nd</sup>	&nbsp;  year </a></li>
+				<li><a href="internship.html" title="Visit this page"> Internship </a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!---Image slideshow-->
+	<div id="slide-container">
+		<figure id="slidy">
+			<img src="Multimedia/SlideShow/Landscape4.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape2.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape3.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape5.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape1.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape6.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape7.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape8.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape9.jpg" alt="" />
+			<img src="Multimedia/SlideShow/Landscape10.jpg" alt="" />
+		</figure>
+	</div>
+
+	<!---Wrapper-->
+	<div id="wraper1">
+		<p id="title"> My 1<sup>st</sup> Year Projects</p>
+
+		<!-- Picture.java -->
+		<div class="projectBox">
+			<div class="flipContainer">
+				<div class="flipper">
+					<div class="front">
+						<img class="projectImg" src="Multimedia/Gallery/G4.jpg" alt="" />
+					</div>
+					<div class="back">
+						<img class="projectImg" src="Multimedia/Gallery/G5.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technology used:</span> Java</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Java Picture
+						</div>
+						<div class="littleD"> My very first university assignment consisted of a .txt file which contained 40,000 digits in range 0-9. I had to assign a specific color to each digit and plot them in a Java graphical window, so that the frame will display a picture of 200x200
+							pixels. I was provided with the input file and given the task of drawing the original picture and a secondary one, which had to render only the boundaries of the initial one, I came up with these 2 pictures on the left. Hover the image to see the
+							second one!
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Robot traveller -->
+		<div class="projectBox">
+			<a href="#" onClick="window.open('https://www.youtube.com/watch?v=jYdaW3XVRCc&amp;feature=youtu.be', '_blank')">
+				<img class="projectSimpleImg" src="Multimedia/Gallery/G6.jpg" title="Click for demo!" alt="" />
+			</a>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technologies used:</span> Java and Mindstorm Lego Robots</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Robot Traveller
+						</div>
+						<div class="littleD"> Using the Mindstorm Robots provided by my department, I had to work in a team of two for basically programing the little robot traveller to find a black line and go along it until reaching a black spot. After arriving at destination the robot spinned
+							and danced on that black spot, to celebrate reaching the goal state. Check the demo by clicking the image on the left !
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Universe of Design -->
+		<div class="projectBox">
+			<a href="#" onClick="window.open('http://htmlprojectvb.webuda.com/', '_blank')">
+				<img class="projectSimpleImg" src="Multimedia/Gallery/G7.jpg" title="Visit the website!" alt="" />
+			</a>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technologies used:</span> HTML, CSS, JAVASCRIPT, PHP, Photoshop CS3</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Universe of Design
+						</div>
+						<div class="littleD"> Developing a whole website by my own initially sounded like a really challenging task and when I discovered I had to do it in less than one month, the challenge certainly increased. The requirements were to create a simple, but still complex website
+							for a fictive company, containing few pages. The "Demo" page which consisted of a canvas element, was the most funny and interesting task of this project. Check it out by clicking the image on the left!
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Battleship -->
+		<div class="projectBox">
+			<div class="flipContainer">
+				<div class="flipper">
+					<div class="front">
+						<img class="projectImg" src="Multimedia/Gallery/G8.jpg" alt="" />
+					</div>
+					<div class="back">
+						<img class="projectImg" src="Multimedia/Gallery/G9.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technologies used:</span> Ruby, Gems(Colored, Colorize)</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Battleship Game
+						</div>
+						<div class="littleD">A Battleship game was the first task which required me to write code in Ruby. I stored all the information requested by the game in two 2D arrays (one for initial state of the game, and one for the active state of the game), where ships positions
+							were marked by 1 and the water ones by 0. Using more gems, the display consisted of coloured text, where the board was colored in red if a shot hit a ship or blue if it was a miss. Different further futures were implemented, such as signaling when
+							a ship was sunk or displaying the score at the end of the game.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- GEC  -->
+		<div class="projectBox">
+			<div class="flipContainer">
+				<div class="flipper">
+					<div class="front">
+						<img class="projectImg" src="Multimedia/Gallery/G11.jpg" alt="" />
+					</div>
+					<div class="back">
+						<img class="projectImg" src="Multimedia/Gallery/G12.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technology used:</span> Photoshop CS3</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Global Engineering Challenge
+						</div>
+						<div class="littleD"> A one week real life engineering experience where together with a team of six engineers, I had to provide a solution to an environmental issue (Water Pumping in Gorka district, Nepal). Our task consisted in helping the villagers in finding a solution
+							to bring pure drinkable water to a settlement on the top of a mountain. Hence, our project idea was based on a Ram Pump, which would definetly solve this issue, requiring no power supply. Hover the image to see the award for this project!
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Chess Game  -->
+		<div class="projectBox">
+			<a href="#" onClick="window.open('https://www.youtube.com/watch?v=NId8CVANMcU', '_blank')">
+				<img class="projectSimpleImg" src="Multimedia/Gallery/G13.jpg" title="Click for demo!" alt="" />
+			</a>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technology used:</span> Java</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Chess Game
+						</div>
+						<div class="littleD"> On this project I had to implement a simple version of a Chess game, where a player loses if his king is taken by the opponent. It was a really challenging and complex project, where the task was to implement a 1-player mode and a 2-players one.
+							If 1-player mode was chosen, the player had to select the difficulty of the game. I implemented "check" checker for the king, which displays a 'Try again!' message if the next selected move threatens player's-to-move king. Click on this image to
+							watch a full demo!
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Rambler Searcher  -->
+		<div class="projectBox">
+			<div class="flipContainer">
+				<div class="flipper">
+					<div class="front">
+						<img class="projectImg" src="Multimedia/Gallery/G17.jpg" alt="" />
+					</div>
+					<div class="back">
+						<img class="projectImg" src="Multimedia/Gallery/G18.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technology used:</span> Java</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Rambler Searcher
+						</div>
+						<div class="littleD">In my Artificial Intelligence module, I got the task: 'work out the best walking route from a start point to a goal point, given a terrain map of the area in the form of a .pgm file'. The input was provided as a 2D array, where each value represented
+							a certain height. The Rambler had to choose the easiest way to achieve its goal (climbing as least as it can, while driving in the field). Hover the image to see the content of the input file, opened in IrfanView.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- The Warrior  -->
+		<div class="projectBox">
+			<div class="flipContainer">
+				<div class="flipper">
+					<div class="front">
+						<img class="projectImg" src="Multimedia/Gallery/G19.jpg" alt="" />
+					</div>
+					<div class="back">
+						<img class="projectImg" src="Multimedia/Gallery/G20.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technologies used:</span> Java</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Intelligent Warrior
+						</div>
+						<div class="littleD"> My second Artificial Intelligence project consisted of a simple game where I had to prove my understanding about game planning with STRIPS. The game template involved a warrior and 3 tools: a ladder, a hook and a rope located at Start. If there
+							was no snake in the pit, the warrior had to plan to take the ladder, lower it into the pit and take the treasure, otherwise, carry the rope and the hook at pit entrance, lower the rope into the pit and hook treasure without being in danger. Hover
+							the image for the result or check it in gallery!
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Twitter platform  -->
+		<div class="projectBox">
+			<div class="flipContainer">
+				<div class="flipper">
+					<div class="front">
+						<img class="projectImg" src="Multimedia/Gallery/G31.jpg" alt="" />
+					</div>
+					<div class="back">
+						<img class="projectImg" src="Multimedia/Gallery/G32.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technologies used:</span> Ruby, Gems(Sinatra, Twitter, Erb, SimpleCov, Cucumber, Capybara)</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Crossover Project
+						</div>
+						<div class="littleD"> A term-long project was to provide a Twitter related interface software for a fictive company, where the user could select to follow/unfollow certain Twitter users, check for branding tweets, display the number of favorites and retweets, access
+							user's timeline, see latest user's conversations and many other features. It was such a fascinating software engineering project where I worked with a team of another five students from the department of Computer Science.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- HEA 2015  -->
+		<div class="projectBox">
+			<div class="slidePics">
+				<figure id="slidyC">
+					<img src="Multimedia/Gallery/G43.jpg" alt="" />
+					<img src="Multimedia/Gallery/G44.jpg" alt="" />
+					<img src="Multimedia/Gallery/G45.jpg" alt="" />
+					<img src="Multimedia/Gallery/G46.jpg" alt="" />
+					<img src="Multimedia/Gallery/G47.jpg" alt="" />
+				</figure>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technologies used:</span> Java, SqLite3</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Holiday Entitlement App
+						</div>
+						<div class="littleD"> My first project ever developed for a real client. This (Holiday Entitlement App) was a simple Java-SqLite application where I firstly put into practice my abilities to connect Java platform to a SqLite database. I worked on this application with
+							another student, friend of mine, to display general reports and to keep track of each employee holiday entitlement record.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Photoshop  -->
+		<div class="projectBox">
+			<div class="slidePics">
+				<figure id="slidyR">
+					<img src="Multimedia/Gallery/G40.jpg" alt="" />
+					<img src="Multimedia/Gallery/G39.jpg" alt="" />
+					<img src="Multimedia/Gallery/G38.jpg" alt="" />
+					<img src="Multimedia/Gallery/G33.jpg" alt="" />
+					<img src="Multimedia/Gallery/G34.jpg" alt="" />
+					<img src="Multimedia/Gallery/G35.jpg" alt="" />
+					<img src="Multimedia/Gallery/G36.jpg" alt="" />
+					<img src="Multimedia/Gallery/G37.jpg" alt="" />
+					<img src="Multimedia/Gallery/G42.jpg" alt="" />
+					<img src="Multimedia/Gallery/G41.jpg" alt="" />
+				</figure>
+			</div>
+			<ul class="description effect">
+				<li>
+					<p class="zero"><span class="bold"> Technology used:</span> Photoshop CS5</p>
+				</li>
+				<li>
+					<div class="one bold">
+						<div class="innerD">
+							Photoshop Projects
+						</div>
+						<div class="littleD"> Sometimes I just like spending my free time working on various design projects using Photoshop. This is how I express my creativity, just by drawing or working on different design projects, for certain tasks or sometimes just for fun. Here are some
+							of my projects from the last year.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!---Footer-->
+	<div id="footer">
+		<img id="up" src="Multimedia/Up.png" title="Back to top" alt="" />
+		<div class="accessibility">
+			<ul>
+				<li>
+					<a href="accessibility.html" title="Accessibility information" accesskey="7"> Accessibility </a>
+				</li>
+			</ul>
+		</div>
+		<p id="footerText"> &copy; Vlad Balanescu | Personal Website | All rights reserved | 2017</p>
+		<p id="footerText2"> Last updated on 1<sup>st</sup> of February 2017</p>
+	</div>
+
+</body>
+
+</html>
+                                                             
