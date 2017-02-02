@@ -245,11 +245,13 @@ body {
     color: #66ffff;
     font-size: 1.8vmin;
 }
+/*--Footer---------------------------------------*/
 
+
+/*----------Mobile version----------------------------*/
 @media only screen and (max-device-width: 500px) {
     #footer {
         position: fixed;
     }
 }
-
-/*--Footer---------------------------------------*/
+/*----------Mobile version----------------------------*/

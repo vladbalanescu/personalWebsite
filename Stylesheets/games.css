@@ -112,3 +112,12 @@
 
 
 /*----------Main content----------------------------*/
+
+/*----------Mobile version----------------------------*/
+
+@media only screen and (max-device-width: 500px) {
+    #playCatch {
+        margin-bottom: 70px;
+    }
+}
+/*----------Mobile version----------------------------*/

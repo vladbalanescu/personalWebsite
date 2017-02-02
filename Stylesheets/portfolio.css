@@ -23,7 +23,7 @@
     box-shadow: 3px 3px 0px #000000;
     border-radius: 10px;
     width: 70vw;
-    margin: 80px auto 0px auto;
+    margin: 80px auto 0 auto;
 }
 
 #wraper1 {
@@ -214,3 +214,14 @@
 
 
 /*----------Main content----------------------------*/
+
+
+/*----------Mobile version----------------------------*/
+
+@media only screen and (max-device-width: 500px) {
+    #wraper1, #wraper2 {
+        margin-bottom: 70px;
+    }
+}
+
+/*----------Mobile version----------------------------*/
