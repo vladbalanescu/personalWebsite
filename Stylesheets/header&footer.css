@@ -246,5 +246,10 @@ body {
     font-size: 1.8vmin;
 }
 
+@media only screen and (max-device-width: 500px) {
+    #footer {
+        position: fixed;
+    }
+}
 
 /*--Footer---------------------------------------*/
