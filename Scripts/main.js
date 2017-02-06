@@ -62,21 +62,17 @@ $(document).ready(function() {
     // Submenu
     $(function() {
         var timer;
-        $('#submenu, .portfolioLink').mouseout(function() {
-            timer = setTimeout(function() {
-                $('#submenu').css('display', 'none');
-
-                //Don't change color if on any Portfolio page
-                if ($('.portfolioLink').parent().children().hasClass('current')) {
-                    $('.portfolioLink').css('color', '#66ffff');
-                } else {
-                    $('.portfolioLink').css('color', '#ffffff');
-                }
-            }, 150);
-        }).mouseover(function() {
-            clearTimeout(timer)
-            $('#submenu').css('display', 'block');
+        $('#submenu, .portfolioLink').hover(function() {
             $('.portfolioLink').css('color', '#66ffff');
+            $('#submenu').stop(true, true).delay(200).fadeIn(300);
+        }, function() {
+            //Don't change color if on any Portfolio page
+            if ($('.portfolioLink').parent().children().hasClass('current')) {
+                $('.portfolioLink').css('color', '#66ffff');
+            } else {
+                $('.portfolioLink').css('color', '#ffffff');
+            }
+            $('#submenu').stop(true, true).delay(200).fadeOut(300);
         })
     });
     //Submenu - END
