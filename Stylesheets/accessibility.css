@@ -81,10 +81,10 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
-        background-size: 130% 400%, auto;
-        -o-background-size: 130% 400%, auto;
-        -moz-background-size: 130% 400%, auto;
-        -webkit-background-size: 130% 400%, auto;
+        background-size: 130% 500%, auto;
+        -o-background-size: 130% 500%, auto;
+        -moz-background-size: 130% 500%, auto;
+        -webkit-background-size: 130% 500%, auto;
     }
 }
 
