@@ -209,3 +209,22 @@
 
 
 /*----------Main content----------------------------*/
+
+
+/*----------Mobile version----------------------------*/
+
+@media only screen and (max-device-width: 500px) {
+    body {
+        background-image: url("../Multimedia/Home.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: 130% 400%, auto;
+        -o-background-size: 130% 400%, auto;
+        -moz-background-size: 130% 400%, auto;
+        -webkit-background-size: 130% 400%, auto;
+    }
+}
+
+
+/*----------Mobile version----------------------------*/
