@@ -72,5 +72,5 @@ $(document).ready(function() {
         }
         $('#submenu').stop(true, true).delay(200).fadeOut(300);
     });
-    //Submenu - END  
+    //Submenu - END
 });
