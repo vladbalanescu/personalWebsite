@@ -49,7 +49,8 @@
 
 .flip-container {
     margin-left: 14vw;
-    width: 20vw height: 10vw;
+    width: 46vw;
+    height: 10vw;
     perspective: 1000px;
     z-index: 10;
 }
