@@ -59,10 +59,14 @@ $(document).ready(function() {
     });
     // Slide up - END
 
+
+
     // Submenu
+    var headerHeight = $('.header').height();
     $('#submenu, .portfolioLink').hover(function() {
         $('.portfolioLink').css('color', '#66ffff');
-        $('#submenu').stop(true, true).delay(200).fadeIn(300);
+        $('.portfolioLink')[0].innerHTML = "Portfolio &#11165;";
+        $('#submenu').stop().animate({marginTop: headerHeight + 40}, 500);
     }, function() {
         //Don't change color if on any Portfolio page
         if ($('.portfolioLink').parent().children().hasClass('current')) {
@@ -70,7 +74,8 @@ $(document).ready(function() {
         } else {
             $('.portfolioLink').css('color', '#ffffff');
         }
-        $('#submenu').stop(true, true).delay(200).fadeOut(300);
+        $('.portfolioLink')[0].innerHTML = "Portfolio &#11167;";
+        $('#submenu').stop().animate({marginTop: -headerHeight-50}, 500);
     });
     //Submenu - END
 });

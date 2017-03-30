@@ -161,13 +161,12 @@
 }
 
 #connectMore {
-  color: #093f89;
-  font-size: 2vw;
+  font-size: 1vw;
   font-family: "Arial", serif;
+  font-style: italic;
   font-weight: bold;
-  text-align: center;
-  margin-top: 3vw;
-  margin-bottom: 1vw;
+  text-align: right;
+  margin: 3vw 3.5vw 1vw 0;
 }
 
 .findMe {
