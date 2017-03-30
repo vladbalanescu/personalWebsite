@@ -63,19 +63,39 @@ $(document).ready(function() {
 
     // Submenu
     var headerHeight = $('.header').height();
+    var timeout;
     $('#submenu, .portfolioLink').hover(function() {
-        $('.portfolioLink').css('color', '#66ffff');
-        $('.portfolioLink')[0].innerHTML = "Portfolio &#11165;";
-        $('#submenu').stop().animate({marginTop: headerHeight + 40}, 500);
-    }, function() {
-        //Don't change color if on any Portfolio page
-        if ($('.portfolioLink').parent().children().hasClass('current')) {
+        // Cancel the transition between the link and submenu
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+
             $('.portfolioLink').css('color', '#66ffff');
-        } else {
-            $('.portfolioLink').css('color', '#ffffff');
-        }
-        $('.portfolioLink')[0].innerHTML = "Portfolio &#11167;";
-        $('#submenu').stop().animate({marginTop: -headerHeight-50}, 500);
+            $('.portfolioLink')[0].innerHTML = "Portfolio &#11165;";
+            $('#submenu').stop().animate({
+                marginTop: headerHeight + 40
+            }, 500);
+
+        }, 200); // change the HTML after 2 seconds
+
+    }, function() {
+
+
+        // Cancel the transition between the link and submenu
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+
+            //Don't change color if on any Portfolio page
+            if ($('.portfolioLink').parent().children().hasClass('current')) {
+                $('.portfolioLink').css('color', '#66ffff');
+            } else {
+                $('.portfolioLink').css('color', '#ffffff');
+            }
+            $('.portfolioLink')[0].innerHTML = "Portfolio &#11167;";
+            $('#submenu').stop().animate({
+                marginTop: -headerHeight - 50
+            }, 500);
+            
+        }, 200); // change the HTML after 2 seconds
     });
     //Submenu - END
 });
