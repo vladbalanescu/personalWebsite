@@ -135,7 +135,7 @@ body {
     box-shadow: 3px 3px 0 #000000;
     background-color: #001a4d;
     z-index: 100;
-    position: absolute;
+    position: fixed;
     right: 300px;
     margin-top: -70px;
 }
