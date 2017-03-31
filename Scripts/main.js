@@ -27,7 +27,7 @@ $(document).ready(function() {
     // Form check
     $("#send").click(function() {
         // Check for empty fields in the form
-        var empty = $(this).parent().find("input").filter(function() {
+        var empty = $(this).parent().find("button").filter(function() {
             return this.value === "";
         });
 
@@ -94,7 +94,7 @@ $(document).ready(function() {
             $('#submenu').stop().animate({
                 marginTop: -headerHeight - 50
             }, 500);
-            
+
         }, 200); // change the HTML after 2 seconds
     });
     //Submenu - END
