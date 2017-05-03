@@ -70,7 +70,7 @@ $(document).ready(function() {
         timeout = setTimeout(function() {
 
             $('.portfolioLink').css('color', '#66ffff');
-            $('.portfolioLink')[0].innerHTML = "Portfolio &#11165;";
+            $('.portfolioLink')[0].innerHTML = "Portfolio &#9650;";
             $('#submenu').stop().animate({
                 marginTop: headerHeight + 40
             }, 500);
@@ -90,7 +90,7 @@ $(document).ready(function() {
             } else {
                 $('.portfolioLink').css('color', '#ffffff');
             }
-            $('.portfolioLink')[0].innerHTML = "Portfolio &#11167;";
+            $('.portfolioLink')[0].innerHTML = "Portfolio &#9660;";
             $('#submenu').stop().animate({
                 marginTop: -headerHeight - 80
             }, 500);
