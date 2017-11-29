@@ -92,7 +92,7 @@ $(document).ready(function() {
             }
             $('.portfolioLink')[0].innerHTML = "Portfolio &#9660;";
             $('#submenu').stop().animate({
-                marginTop: -headerHeight - 80
+                marginTop: -headerHeight
             }, 500);
 
         }, 200); // change the HTML after 2 seconds
