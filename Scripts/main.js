@@ -26,15 +26,16 @@ $(document).ready(function() {
 
     // Form check
     $("#send").click(function() {
-        // Check for empty fields in the form
-        var empty = $(this).parent().find("button").filter(function() {
+        // Get all empty fields in the form
+        var empty = $(this).parent().find(":text").filter(function() {
             return this.value === "";
         });
 
-        // Exclude send and antispam inputs
-        empty.length -= 1;
-        if (($('#antispam').value != "") && (empty.length != 0)) {
+        // Exclude undefined field
+        if ($('#antispam').value != undefined) {
             empty.length += 1;
+        } else {
+            empty.length -= 1;
         }
 
         // Send only if all the fields are filled in and 1 tickbox ticked
@@ -62,9 +63,9 @@ $(document).ready(function() {
 
 
     // Submenu
-    var headerHeight = $('.header').height();
     var timeout;
     $('#submenu, .portfolioLink').hover(function() {
+        var headerHeight = $('#header').height();
         // Cancel the transition between the link and submenu
         clearTimeout(timeout);
         timeout = setTimeout(function() {
@@ -72,7 +73,7 @@ $(document).ready(function() {
             $('.portfolioLink').css('color', '#66ffff');
             $('.portfolioLink')[0].innerHTML = "Portfolio &#9650;";
             $('#submenu').stop().animate({
-                marginTop: headerHeight + 40
+                marginTop: headerHeight
             }, 500);
 
         }, 200); // change the HTML after 2 seconds
@@ -83,7 +84,7 @@ $(document).ready(function() {
         // Cancel the transition between the link and submenu
         clearTimeout(timeout);
         timeout = setTimeout(function() {
-
+            var headerHeight = $('#header').height();
             //Don't change color if on any Portfolio page
             if ($('.portfolioLink').parent().children().hasClass('current')) {
                 $('.portfolioLink').css('color', '#66ffff');
