@@ -167,7 +167,7 @@ $(document).ready(function() {
         context.fillText("Time's up", 285, 280);
         context.fillStyle = "white";
         context.font = "italic 25px Arial Black";
-        context.fillText("Score: " + snakesCaught + " snakes", 295, 320);
+        context.fillText("Score: " + snakesCaught + " vipers", 295, 320);
         snakesCaught = 0;
         clearInterval(intervalSet);
         document.getElementById("playCatch").style.display = 'block';
