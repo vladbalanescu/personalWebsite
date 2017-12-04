@@ -249,3 +249,15 @@ body {
 
 
 /*--Footer---------------------------------------*/
+
+
+/*----------Mobile version----------------------------*/
+
+@media only screen and (max-device-width: 500px) {
+  #footer {
+    bottom: 0;
+  }
+}
+
+
+/*----------Mobile version----------------------------*/
