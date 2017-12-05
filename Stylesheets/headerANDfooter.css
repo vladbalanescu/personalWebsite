@@ -32,10 +32,10 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: 130% 200%, auto;
-  -o-background-size: 130% 200%, auto;
-  -moz-background-size: 130% 200%, auto;
-  -webkit-background-size: 130% 200%, auto;
+  background-size: 100% 100%, auto;
+  -o-background-size: 100% 100%, auto;
+  -moz-background-size: 100% 100%, auto;
+  -webkit-background-size: 100% 100%, auto;
   min-height: 100%;
   position: relative;
 }
@@ -254,6 +254,12 @@ body {
 /*----------Mobile version----------------------------*/
 
 @media only screen and (max-device-width: 500px) {
+  body {
+    background-size: 130% 200%, auto;
+    -o-background-size: 130% 200%, auto;
+    -moz-background-size: 130% 200%, auto;
+    -webkit-background-size: 130% 200%, auto;
+  }
   #footer {
     bottom: 0;
   }
