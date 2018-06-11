@@ -35,16 +35,11 @@
     border: 2px solid #000066;
     border-radius: 10px;
     width: 45vw;
-    height: 5vw;
+    height: 4vw;
     background-color: #F8F8F8;
     margin-top: 20px;
     padding: 0px 0.5vw 0.2vw 0.5vw;
     text-align: center;
-}
-
-#titleBox2 {
-    background-color: #e6f5ff;
-    box-shadow: 3px 3px 0 #000000;
 }
 
 .flip-container {
