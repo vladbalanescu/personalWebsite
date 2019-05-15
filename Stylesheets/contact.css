@@ -130,7 +130,7 @@
     resize: none;
 }
 
-#send, #reset {
+#send, #sendFake, #reset {
     width: 6vw;
     background-color: #1F3370;
     font-size: 1vw;
@@ -147,11 +147,11 @@
     padding: 0.5vw 1.5vw;
 }
 
-#send {
+#send, #sendFake {
   margin: 0.8vw 0.5vw 5vw 14vw;
 }
 
-#send:hover, #reset:hover {
+#send:hover, #sendFake:hover, #reset:hover {
     color: #66ffff;
     -webkit-transition: 0.8s;
     -moz-transition: 0.8s;
